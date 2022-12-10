@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lexend:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --bg-black-200: rgb(0 0 0 / 0.2);
+  --bg-black-300: rgb(0 0 0/ 0.3);
+  --bg-black-800: rgb(0 0 0/ 0.8);
+  --bg-blue-500: rgb(59 130 246);
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.4rem
+}
+
+.form_container {
+  width: 700px;
+  margin: 5rem auto;
+  box-shadow: 0 10px 15px -3px var(--bg-black-200);
+  padding: 2rem 4rem;
+  border-radius: 0.6rem;
+}
+
+.input--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h3,
+label {
+  color: var(--bg-black-800);
+}
+
+label span {
+  color: red;
+  font-size: 1.6rem;
+}
+
+input,
+.input--data,
+textarea,
+select {
+  width: 100%;
+}
+
+input,
+textarea,
+select {
+  font-family: "Inter", sans-serif;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--bg-black-300);
+}
+
+textarea {
+  height: 14rem;
+}
+
+input[type=submit] {
+  background-color: var(--bg-blue-500);
+  border: none;
+  padding: 1.4rem;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.error {
+  font-size: 1.2rem;
+  color: red;
+}

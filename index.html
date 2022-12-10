@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Form Validation</title>
+</head>
+
+<body>
+  <div class="form_container">
+    <h3 class="heading">User's complaint Registration</h3>
+
+    <form action="" id="form">
+      <div class="input--flex">
+        <div class="input--data">
+          <label>First Name<span>*</span></label><br />
+          <input type="text" id="first__name" placeholder="Enter Your First name" />
+          <p id="firstname--error" class="error"></p>
+        </div>
+
+        <div class="input--data">
+          <label>Last Name<span>*</span></label><br />
+          <input type="text" id="last__name" placeholder="Enter Your Last Name" />
+          <p id="lastname--error" class="error"></p>
+        </div>
+      </div>
+
+      <div class="input--flex">
+        <div class="input--data">
+          <label>Email<span>*</span></label><br />
+          <input type="email" id="email" placeholder="Enter Your Email ID" />
+          <p id="email--error" class="error"></p>
+        </div>
+
+        <div class="input--data">
+          <label>Phone No.</label><br />
+          <input type="tel" id="phoneno" placeholder="Enter Your Phone No." />
+          <p id="phone--error" class="error"></p>
+        </div>
+      </div>
+
+      <div class="input--flex">
+        <div class="input--data">
+          <label>Gender</label><br />
+          <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="input--data">
+          <label>Date of Birth<span>*</span></label><br />
+          <input type="date" id="date" />
+          <p id="date--error" class="error"></p>
+        </div>
+      </div>
+
+      <div class="input--flex">
+        <input type="text" id="city" placeholder="Enter your City" />
+        <input type="text" id="state" placeholder="Enter Your State" />
+        <input type="text" id="pincode" placeholder="Enter Your PIN" />
+      </div>
+
+      <div class="input--flex">
+        <div class="input--data">
+          <label>Write Your Complaint<span>*</span></label><br />
+          <textarea id="message" placeholder="Write Here"></textarea>
+          <p id="messageError" class="error"></p>
+        </div>
+      </div>
+
+      <div class="input--flex">
+        <input type="submit" id="submit" value="Send" />
+      </div>
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
